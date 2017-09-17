@@ -59,14 +59,12 @@ app.get('/bad', (req,res) => {
   });
 });
 
-app.get('/portfolio', (req, res) => {
-  res.render('portfolio.hbs', {
-    pageTitle: 'Portfolio Page',
-    welcomeMessage: 'Portfolio here',
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects',
+    welcomeMessage: 'Project page text would go here',
   });
 });
-
-
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
